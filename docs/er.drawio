@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-30T14:11:28.881Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="LiF4ZQUftLCS4I0PYIEF" version="21.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-30T14:12:07.736Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="adeCjnY7gMv5velS2jzf" version="21.1.1" type="github">
   <diagram name="Page-1" id="CjbLvuf9Ty9q6dteD8Ma">
     <mxGraphModel dx="1955" dy="578" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -153,7 +153,7 @@
         <mxCell id="WMxFekpVjy091wSbI-C_-52" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WMxFekpVjy091wSbI-C_-51">
           <mxGeometry width="93" height="92.5" as="geometry" />
         </mxCell>
-        <mxCell id="WMxFekpVjy091wSbI-C_-53" value="Orders" style="rhombus;whiteSpace=wrap;html=1;container=1;" vertex="1" parent="WMxFekpVjy091wSbI-C_-51">
+        <mxCell id="WMxFekpVjy091wSbI-C_-53" value="Is ordered" style="rhombus;whiteSpace=wrap;html=1;container=1;" vertex="1" parent="WMxFekpVjy091wSbI-C_-51">
           <mxGeometry x="6.5" y="6.25" width="80" height="80" as="geometry">
             <mxRectangle x="6.5" y="6.25" width="50" height="40" as="alternateBounds" />
           </mxGeometry>
