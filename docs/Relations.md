@@ -19,7 +19,7 @@ CompanyEmail
 
 Produce
 ============
-- *Produce (company_name, product_name, capacity)*
+- *Produce (company_name, product_id, capacity)*
 - ***PRIMARY KEY (Produce)** = <company_name, product_id>*
 - ***FOREIGN KEY Produce (company_name)** REFERENCES Company (name)*
 - ***FOREIGN KEY Produce (product_id)** REFERENCES Product (id)*
@@ -31,5 +31,5 @@ Transaction
 - ***PRIMARY KEY (Transaction)** = <company_name, product_id, order_date>*
 - ***FOREIGN KEY Transaction (company_name)** REFERENCES Company (name)*
 - ***FOREIGN KEY Transaction (product_id)** REFERENCES Product (id)*
-- ***Transaction (capacity)** cannot be null*
+- ***Transaction (amount)** cannot be null*
 
