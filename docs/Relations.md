@@ -19,17 +19,23 @@ CompanyEmail
 
 Produce
 ============
-- *Produce (company_name, product_id, capacity)*
-- ***PRIMARY KEY (Produce)** = <company_name, product_id>*
+- *Produce (id, company_name, product_id, capacity)*
+- ***PRIMARY KEY (Produce)** = <id>*
+- ***CANDIDATE KEY (Produce)** = <company_name, product_id>*
 - ***FOREIGN KEY Produce (company_name)** REFERENCES Company (name)*
 - ***FOREIGN KEY Produce (product_id)** REFERENCES Product (id)*
 - ***Produce (capacity)** cannot be NULL*
+- ***Produce (product_id)** cannot be NULL*
+- ***Produce (company_name)** cannot be NULL*
 
 Transaction
 ============
-- *Transaction (company_name, product_id, order_date, amount)*
-- ***PRIMARY KEY (Transaction)** = <company_name, product_id, order_date>*
+- *Transaction (id, company_name, product_id, order_date, amount)*
+- ***PRIMARY KEY (Transaction)** = \<id\>*
 - ***FOREIGN KEY Transaction (company_name)** REFERENCES Company (name)*
 - ***FOREIGN KEY Transaction (product_id)** REFERENCES Product (id)*
 - ***Transaction (amount)** cannot be null*
+- ***Transaction (order_date)** cannot be NULL*
+- ***Transaction (product_id)** cannot be NULL*
+- ***Transaction (company_name)** cannot be NULL*
 

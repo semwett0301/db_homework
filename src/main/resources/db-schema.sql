@@ -55,10 +55,11 @@ CREATE TABLE IF NOT EXISTS COMPANY_EMAIL
 CREATE TABLE IF NOT EXISTS PRODUCE
 (
     id SERIAL,
-    company_name VARCHAR(256),
-    product_id   INT,
+    company_name VARCHAR(256) NOT NULL,
+    product_id   INT NOT NULL,
     capacity     INT NOT NULL CHECK ( capacity > 0 ),
-    PRIMARY KEY (id, company_name, product_id),
+    PRIMARY KEY (id),
+    UNIQUE (company_name, product_id),
     FOREIGN KEY (company_name) REFERENCES Company (name) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (product_id) REFERENCES Product (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
@@ -66,11 +67,11 @@ CREATE TABLE IF NOT EXISTS PRODUCE
 CREATE TABLE IF NOT EXISTS TRANSACTION
 (
     id           SERIAL,
-    company_name VARCHAR(256),
-    product_id   INT CHECK ( product_id > 0 ),
+    company_name VARCHAR(256) NOT NULL,
+    product_id   INT NOT NULL CHECK ( product_id > 0 ),
     order_date   DATE NOT NULL,
     amount       INT NOT NULL CHECK ( amount > 0 ),
-    PRIMARY KEY (id, company_name, product_id),
+    PRIMARY KEY (id),
     FOREIGN KEY (company_name) REFERENCES Company (name) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (product_id) REFERENCES Product (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
