@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-30T14:16:42.227Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="9-203PGGDXdtTcv9JsPO" version="21.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-30T14:46:43.224Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="_LmppwDkgjHLpkZbP5By" version="21.1.1" type="github">
   <diagram name="Page-1" id="CjbLvuf9Ty9q6dteD8Ma">
     <mxGraphModel dx="1955" dy="578" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -92,7 +92,7 @@
         <mxCell id="WMxFekpVjy091wSbI-C_-17" value="country" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-85" y="370" width="85" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="WMxFekpVjy091wSbI-C_-23" value="phone" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="1">
+        <mxCell id="WMxFekpVjy091wSbI-C_-23" value="phone" style="ellipse;whiteSpace=wrap;html=1;fontStyle=4" vertex="1" parent="1">
           <mxGeometry x="-70" y="155" width="85" height="50" as="geometry" />
         </mxCell>
         <mxCell id="WMxFekpVjy091wSbI-C_-28" value="" style="group" vertex="1" connectable="0" parent="1">
