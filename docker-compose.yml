@@ -1,0 +1,34 @@
+version: "3.9"
+services:
+  service:
+    image: product-manager:0.0.1-SNAPSHOT
+    container_name: service_market
+    restart: "always"
+    environment:
+      DB_URL: "jdbc:postgresql://db:5432/sem_wet"
+      DB_USERNAME: "sem_wet"
+      DB_PASSWORD: "zxc"
+    ports:
+      - "8080:8080"
+    networks:
+      - backend
+
+  db:
+    image: postgres:latest
+    container_name: db_market
+    environment:
+      POSTGRES_DB: "sem_wet"
+      POSTGRES_USER: "sem_wet"
+      POSTGRES_PASSWORD: "zxc"
+    ports:
+      - "5432:5432"
+    restart: "always"
+    networks:
+      - backend
+
+volumes:
+  my_app_data:
+
+networks:
+  backend:
+    driver: bridge
